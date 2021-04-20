@@ -3,7 +3,6 @@ import TokenUser from "../lib/GenerateToken.js";
 export default class LoginController{
     
     async login(email,password){
-        
         this.user = await loginWithUserPass(email,password);
         if(this.user==null) return {
             state:401,

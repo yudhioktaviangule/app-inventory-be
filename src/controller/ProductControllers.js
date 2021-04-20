@@ -6,7 +6,6 @@ export default class ProductControllers {
     }
     async index(){
         try{
-
             let sql = `SELECT * FROM products LIMIT 10`;
             const result = await this.sqlKU.query(sql,[]);
             return result
